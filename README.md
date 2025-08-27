@@ -1,6 +1,6 @@
 # JS_Challenges
 
-This is set of coding challenges that I tacking as assigned by my tutor.
+This is set of coding challenges that I am tackling as assigned by my tutor.
 ## N.B. I am solving these coding challenges using JavaScript.
 
 They will be to help me gain a better understanding of the following:
