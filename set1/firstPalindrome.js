@@ -15,7 +15,7 @@ A string is palindromic if it reads the same forward and backward. */
     - If they are the same → it’s a palindrome.
 
 4. If palindrome found
-    - Immediately return that `word` (since we want the first one).
+    - Immediately return that `word`.
 
 5. If no palindrome found after checking all words
     - Return an empty string `""`. */
