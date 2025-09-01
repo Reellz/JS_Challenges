@@ -11,19 +11,22 @@ until the result has only one digit, and return it. */
     - Update `num = sum`
 3. End loop when `num` is a single digit
 4. Return `num` */
-/* FUNCTION addDigits(num):
-    WHILE num has more than 1 digit:
-        SET sum = 0
-        CONVERT num to string (or loop through digits)
-        FOR each digit in num:
-            ADD digit to sum
-        END FOR
-        UPDATE num = sum
-    END WHILE
-    RETURN num
-END FUNCTION
- */
 
 function addDigits(num){
+    while(num >= 10){
+        let sum = 0;
+        let string = num.toString();
 
+        for (let i = 0; i < string.length; i++){
+        sum += Number(string[i]);
+        }
+        num = sum;
+    }
+    return num;
 }
+
+console.log(addDigits(38));  
+console.log(addDigits(0));   
+console.log(addDigits(9));   
+console.log(addDigits(123)); 
+console.log(addDigits(9999));
