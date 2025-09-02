@@ -10,16 +10,16 @@ twice in the array, and return false if every element is distinct.​ */
 4. If the loop finishes with no repeats found → return false. */
 
 function hasDuplicate(array){
-    const seen = new Set()
+    const seen = new Set();
 
     for (const x of array){
         if (seen.has(x)){
-            return true
+            return true;
         }else{
-            seen.add(x)
+            seen.add(x);
         }
     }
-    return false
+    return false;
 }
 
 console.log(hasDuplicate([1, 2, 3, 4, 5]));
